@@ -245,6 +245,11 @@ for x in range (5):
     print ("Suck my balls!")
     print (x)
     if x == 2:
+
+for ore in range(24):
+    for minute in range(60):
+        for secunde in range(60):
+            print(ore, ":", minute, ":", secunde)
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 '''Numara in intervalul 1,10 cu pasul 2.Daca pun -2 la pas,va numara invers...ex: (10,1,-2). Functia range creeaza un tip de obiect numit iterabil.'''
 for x in range (1,10,2):
@@ -302,8 +307,41 @@ def main():
 main()
 ----------------------------------------------------------------------------------------------------------------
 
+* **MODULE**
 
-  
+*DEFINIRE*
+
+modul.functie
+Ex: number = random.randint(1,100)
+----------------------------------------------------------------------------------------------------------------
+import random
+number = random.randint(1,100)
+print (number)
+----------------------------------------------------------------------------------------------------------------
+Ex. definire 5 numere aleatoare intre 1 si 100:
+import random
+def main():
+    for count in range(5):
+        number = random.randint(1, 100)
+        print(number)
+main()   
+----------------------------------------------------------------------------------------------------------------
+*Functia randrange*
+numar = random.randrange(10)
+Funcția randrange ia același argument ca funcția range. Diferența este că randrange nu returnează o listă de valori. În loc de asta, ea returnează o valoare aleatoare  dintr‐o secvență de valori. Argumentul – în cazul nostru 10 – specifică limita unei secvențe de valori. Funcția va returna un număr aleator selectat din secvența de la 0  în sus dar nu include limita sfârșitului, adică numărul 10. 
+Următoarea declarație specifică și valoarea de început dar și de sfârșit a secvenței:  
+numar = random.randrange(5, 10)
+Când această declarație e executată, un număr întâmplător cuprins între 5 și 9 va fi atribuit variabilei număr. 
+Următorul exemplu specifică o valoare de start, una de sfârșit și o altă valoare:   
+numar = random.randrange (0, 101, 10)
+Funcția uniform returnează un număr aleator în virgulă mobilă, dar îți permite să specifici media valorilor pe care le‐ai selectat:
+numar = random.uniform (1.0, 10.0)
+Declarația de mai sus face ca funcția uniform să returneze o valoarea aleatoare în virgulă mobilă situată în gama 1.0 până la 10.0 și s-­o atribuie variabilei numar.
+       
+
+
+
+
 
 
 _________________________________________________________________________________________________________________________________________________________________________________
